@@ -80,6 +80,12 @@ const authMiddleware = (req, res, next) => {
   }
 };
 
+// Test Route
+
+app.get("/status", async(req, res) => {
+  return res.status(200).json({"message":"App is running fine."});
+});
+
 // ─────────────────────────────────────────────
 // 🔐 REGISTER
 // ─────────────────────────────────────────────
